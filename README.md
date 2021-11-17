@@ -1,7 +1,5 @@
 
-# Team Book for my Slaves
-
-## Contents
+### Contents
 - Data Structures
     - Segment Tree
     - Trie
