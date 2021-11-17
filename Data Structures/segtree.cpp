@@ -43,17 +43,17 @@ int sum_tree(int v, int tl, int tr, int l, int r) {
            sum_tree((v << 1) + 1, tm + 1, tr, max(l, tm + 1), r);
 }
 
-void update (int v, int tl, int tr, int pos, int new_val) {
-	if (tl == tr) {
-		tree[v] = new_val;
+void update(int v, int tl, int tr, int pos, int new_val) {
+    if (tl == tr) {
+        tree[v] = new_val;
     } else {
-		int tm = (tl + tr) >> 1;
-		if (pos <= tm) {
-			update(v << 1, tl, tm, pos, new_val);
+        int tm = (tl + tr) >> 1;
+        if (pos <= tm) {
+            update(v << 1, tl, tm, pos, new_val);
         } else {
-			update((v << 1) + 1, tm + 1, tr, pos, new_val);
+            update((v << 1) + 1, tm + 1, tr, pos, new_val);
         }
-		tree[v] = tree[v << 1] + tree[(v << 1) + 1];
-	}
+        tree[v] = tree[v << 1] + tree[(v << 1) + 1];
+    }
 }
 
