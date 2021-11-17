@@ -4,3 +4,6 @@
     - Segment Tree
     - Trie
 
+- Precalc Solutions
+    - Factorial
+
