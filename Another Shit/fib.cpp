@@ -1,9 +1,4 @@
 
-/*
-    author: MrS4g0
-    created: 12.10.2021 17:49:42
-*/
-
 #include <bits/stdc++.h>
 #include <omp.h>
 using namespace std;
