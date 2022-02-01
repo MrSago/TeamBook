@@ -4,6 +4,8 @@ using namespace std;
 
 
 /*
+Segment Tree
+
 Complexity:
     build O(n)
     sum_tree O(logn)
@@ -13,7 +15,7 @@ Memory:
 Use:
     build(1, 0, n - 1);
     sum_tree(1, 0, n - 1, l, r);
-    update(1, 0, n - 1, pos, l, r);
+    update(1, 0, n - 1, pos, new_val);
 */
 
 constexpr int MAXN = int(1e5);
